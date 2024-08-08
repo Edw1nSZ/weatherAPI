@@ -42,7 +42,7 @@ public class WeatherReportControllerTest {
                         .param("latitude", String.valueOf(latitude))
                         .param("longitude", String.valueOf(longitude)))
                 .andExpect(status().isOk())
-                .andExpect(content().json("{ /* JSON representation of mockWeatherReport */ }")); 
+                .andExpect(content().json("{ /* JSON representation of mockWeatherReport */ }"));
     }
 
 
